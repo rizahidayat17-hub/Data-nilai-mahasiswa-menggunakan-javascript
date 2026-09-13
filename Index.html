@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <!-- Contoh styling sederhana pakai Tailwind CSS CDN biar langsung rapi -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold mb-4 text-gray-800">Daftar Nilai Mahasiswa</h1>
+        
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-700">
+                        <th class="p-3 border">No</th>
+                        <th class="p-3 border">NIM</th>
+                        <th class="p-3 border">Nama</th>
+                        <th class="p-3 border">Prodi</th>
+                        <th class="p-3 border">Nilai</th>
+                        <th class="p-3 border">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-mahasiswa">
+                    <!-- Data dari JavaScript akan dimasukkan ke sini -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Panggil main.js dengan type="module" -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
